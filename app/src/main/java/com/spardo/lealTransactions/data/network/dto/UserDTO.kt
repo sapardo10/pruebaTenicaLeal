@@ -2,9 +2,10 @@ package com.spardo.lealTransactions.data.network.dto
 
 import com.google.gson.annotations.SerializedName
 
-data class CommerceDTO(
+data class UserDTO(
     @SerializedName("id") val id: Long?,
+    @SerializedName("createdDate") val createdDate: String?,
     @SerializedName("name") val name: String?,
-    @SerializedName("valueToPoints") val valueToPoints: Double?,
-    @SerializedName("branches") val branches: List<BranchDTO>?
+    @SerializedName("birthday") val birthday: String?,
+    @SerializedName("photo") val photo: String?
 )
